@@ -1,0 +1,128 @@
+ tiranait2@tiranait2:~$
+tiranait2@tiranait2:~$ git --version
+git version 2.43.0
+tiranait2@tiranait2:~$ git config --global user.name "Haidi Koliqi"
+tiranait2@tiranait2:~$ git config --global user.email "haidikoliqi04@gmail.com"
+tiranait2@tiranait2:~$ mkdir mynewproject
+tiranait2@tiranait2:~$ cd mynewproject/
+tiranait2@tiranait2:~/mynewproject$ git init
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint:   git config --global init.defaultBranch <name>
+hint:
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint:
+hint:   git branch -m <name>
+Initialized empty Git repository in /home/tiranait2/mynewproject/.git/
+tiranait2@tiranait2:~/mynewproject$ mv ^C
+tiranait2@tiranait2:~/mynewproject$ mv /home/tiranait2/mynewproject/.git/ /documents/Progress/
+mv: cannot move '/home/tiranait2/mynewproject/.git/' to '/documents/Progress/': No such file or directory
+tiranait2@tiranait2:~/mynewproject$ mv /home/tiranait2/mynewproject/.git/ /Documents/Progress/
+mv: cannot move '/home/tiranait2/mynewproject/.git/' to '/Documents/Progress/': No such file or directory
+tiranait2@tiranait2:~/mynewproject$ ls -a
+.  ..  .git
+tiranait2@tiranait2:~/mynewproject$ git init
+Reinitialized existing Git repository in /home/tiranait2/mynewproject/.git/
+tiranait2@tiranait2:~/mynewproject$ git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+tiranait2@tiranait2:~/mynewproject$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        README.md
+
+nothing added to commit but untracked files present (use "git add" to track)
+tiranait2@tiranait2:~/mynewproject$ git add README.md
+tiranait2@tiranait2:~/mynewproject$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   README.md
+
+tiranait2@tiranait2:~/mynewproject$ git rm --cached README.md
+rm 'README.md'
+tiranait2@tiranait2:~/mynewproject$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        README.md
+
+nothing added to commit but untracked files present (use "git add" to track)
+tiranait2@tiranait2:~/mynewproject$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        README.md
+        file1.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+tiranait2@tiranait2:~/mynewproject$ git commit
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        README.md
+        file1.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+tiranait2@tiranait2:~/mynewproject$ git add README.md
+tiranait2@tiranait2:~/mynewproject$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   README.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        file1.txt
+
+tiranait2@tiranait2:~/mynewproject$ git commit
+[master (root-commit) 1c64543] add README.md containing the description of the project
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 README.md
+tiranait2@tiranait2:~/mynewproject$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        file1.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+tiranait2@tiranait2:~/mynewproject$ git add file1.txt
+tiranait2@tiranait2:~/mynewproject$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   file1.txt
+
+tiranait2@tiranait2:~/mynewproject$ git commit
+[master 3068aca] trying it on my own without looking at the book
+ 1 file changed, 1 insertion(+)
+ create mode 100644 file1.txt
+tiranait2@tiranait2:~/mynewproject$ git status
+On branch master
+nothing to commit, working tree clean
+
